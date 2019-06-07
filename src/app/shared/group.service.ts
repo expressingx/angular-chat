@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class GroupService {
     
-    BASE_MESSAGE_URL = "http://localhost:3000/message/"
-    BASE_GROUP_URL = "http://localhost:3000/chatGroup/"
+    BASE_MESSAGE_URL = "http://192.168.122.21:3000/message/"
+    BASE_GROUP_URL = "http://192.168.122.21:3000/chatGroup/"
 
     constructor(
         private http: HttpClient

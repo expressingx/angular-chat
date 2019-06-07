@@ -5,7 +5,7 @@ import { Message } from 'src/models/Message';
 @Injectable()
 export class MessageService {
 
-    BASE_URL = "http://localhost:3000/message/"
+    BASE_URL = "http://192.168.122.21:3000/message/"
 
     constructor(
         private http: HttpClient
