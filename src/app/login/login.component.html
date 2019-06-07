@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+            <form ngForm>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="text" name="username" [(ngModel)]="userService.currentUser.userName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+                </div>
+                <button (click)="loginClick()" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+</div>

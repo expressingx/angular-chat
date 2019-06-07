@@ -1,37 +1,53 @@
 {
-    "user": [
-        {
-            "id": "1",
-            "userName": "admin"
-        }
-    ],
-    "chatGroup": [
-        {
-            "id": "1",
-            "name": "admin-chat-group"
-        }
-    ],
-    "message": [
-        {
-            "id": "1",
-            "userId": "1",
-            "groupId": "1",
-            "message": "this is random awesome message",
-            "timeStamp": ""
-        },
-		{
-			"id": "2",
-			"userId": "1",
-			"groupId": "1",
-			"message": "wow",
-			"timeStamp": "asdasd"
-		},
-		{
-			"id": "2",
-			"userId": "1",
-			"groupId": "2",
-			"message": "wow",
-			"timeStamp": "asdasd"
-		}
-    ]
+  "user": [
+    {
+      "id": "1",
+      "userName": "admin"
+    },
+    {
+      "id": "5v0E_s8",
+      "userName": "Test user"
+    },
+    {
+      "id": "JZFAk0x",
+      "userName": "Dinko"
+    },
+    {
+      "id": "d80d94e0-389c-4922-b07d-3b4ab8638a8d",
+      "userName": "adsasd"
+    }
+  ],
+  "chatGroup": [
+    {
+      "id": "1",
+      "name": "admin-chat-group"
+    },
+    {
+      "id": "5As1v-y",
+      "name": "fun chat"
+    }
+  ],
+  "message": [
+    {
+      "id": "1",
+      "userId": "1",
+      "groupId": "1",
+      "message": "this is random awesome message",
+      "timeStamp": ""
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "groupId": "1",
+      "message": "wow",
+      "timeStamp": "asdasd"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "groupId": "2",
+      "message": "wow",
+      "timeStamp": "asdasd"
+    }
+  ]
 }
