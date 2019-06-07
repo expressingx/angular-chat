@@ -11,6 +11,10 @@ export class MessageService {
         private http: HttpClient
     ) { }
 
+    getMessages(){
+        return this.http.get<Message[]>(this.BASE_URL);
+    }
+
     postMessage(message: Message) {
         return this.http.post(this.BASE_URL, message, {
             headers: new HttpHeaders({
