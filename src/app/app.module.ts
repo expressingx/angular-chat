@@ -16,12 +16,14 @@ import { MessageListComponent } from './Messages/message-list/message-list.compo
 import { HomeComponent } from './home/home.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserDetailsComponent } from './users/user-details/user-details.component';
+import { ChatEditComponent } from './chat-group/chat-edit/chat-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     ChatGroupComponent,
+    ChatEditComponent,
     MessagesComponent,
     MessageItemComponent,
     MessageListComponent,
