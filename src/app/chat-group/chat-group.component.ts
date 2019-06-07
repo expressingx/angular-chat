@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-char-group',
-  templateUrl: './char-group.component.html',
-  styleUrls: ['./char-group.component.css']
+  selector: 'app-chat-group',
+  templateUrl: './chat-group.component.html',
+  styleUrls: ['./chat-group.component.css']
 })
 export class CharGroupComponent implements OnInit {
 
