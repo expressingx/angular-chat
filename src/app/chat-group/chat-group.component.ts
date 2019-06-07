@@ -19,6 +19,8 @@ export class ChatGroupComponent implements OnInit {
       id: null,
       name: ''
     };
+
+    this.loadChatGroups();
   }
 
   loadChatGroups() {

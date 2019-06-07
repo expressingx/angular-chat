@@ -16,7 +16,7 @@ export class ChatEditComponent implements OnInit {
   ngOnInit() {
   }
 
-  save() {
+  public save() {
     this.saved.emit(this.chatGroup);
   }
 
