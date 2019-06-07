@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class UserService {
 
-    BASE_URL = "http://localhost:3000/user"
+    BASE_URL = "http://192.168.122.21:3000/user"
 
     constructor(
         private http: HttpClient
