@@ -12,6 +12,7 @@ import { CharGroupComponent } from './chat-group/chat-group.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageItemComponent } from './Messages/message-item/message-item.component';
 import { MessageListComponent } from './Messages/message-list/message-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MessageListComponent } from './Messages/message-list/message-list.compo
     CharGroupComponent,
     MessagesComponent,
     MessageItemComponent,
-    MessageListComponent
+    MessageListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
