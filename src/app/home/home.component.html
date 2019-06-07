@@ -1,15 +1,17 @@
 <div class="container">
-  
-  <div class="col-50">
-    <div class="row">
-      <app-users></app-users>
+  <div class="row">
+    <div class="col-sm">
+        <div class="split box">
+            <app-users></app-users>
+          </div>
+          <div class="split box">
+              <app-chat-group></app-chat-group>
+          </div>
     </div>
-    <div class="row">
-      <app-chat-group></app-chat-group>
+    <div class="col-sm">
+        <div class="box">
+          <app-messages></app-messages>
+        </div>
     </div>
-  </div>
-
-  <div class="col-50">
-    <app-messages></app-messages>
   </div>
 </div>
