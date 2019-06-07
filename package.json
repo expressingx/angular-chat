@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"npm run server\" \"ng serve\"",
-    "server": "json-server server/api/db.json --watch",
+    "start": "concurrently \"npm run server\" \"ng serve --host 192.168.122.21 --port 80\"",
+    "server": "json-server --host 192.168.122.21 server/api/db.json --watch",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
