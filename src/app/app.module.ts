@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageItemComponent } from './Messages/message-item/message-item.component';
 import { MessageListComponent } from './Messages/message-list/message-list.component';
 import { HomeComponent } from './home/home.component';
+import { UsersListComponent } from './users/users-list/users-list.component';
+import { UserDetailsComponent } from './users/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { HomeComponent } from './home/home.component';
     MessagesComponent,
     MessageItemComponent,
     MessageListComponent,
-    HomeComponent
+    HomeComponent,
+    UsersListComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     UserService,

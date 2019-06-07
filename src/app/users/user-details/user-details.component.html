@@ -1,0 +1,14 @@
+
+      <h1>
+          <span *ngIf="selectedUser.id; else prompt">Editing {{originalName}}</span>
+          <ng-template #prompt>Create</ng-template>
+        </h1>
+
+  <form (submit)="saved.emit(selectedUser)">
+      <div class="full-width">
+        <input placeholder="Name" [(ngModel)]="selectedUser.userName" type="text" name="name">
+      </div>
+    <div>
+      <button type="submit" class="btn-primary">Create</button>      
+    </div>
+  </form>
