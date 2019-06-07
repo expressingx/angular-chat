@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Message } from 'src/models/Message';
 import { ChatGroup } from 'src/models/ChatGroup';
 import { Observable } from 'rxjs';
@@ -22,5 +22,13 @@ export class GroupService {
 
     getAllGroups(): Observable<ChatGroup[]> {
         return this.http.get<ChatGroup[]>(this.BASE_GROUP_URL);
+    }
+
+    createGroup(group: ChatGroup) {
+        return this.http.post(this.BASE_GROUP_URL, group, {
+            headers: new HttpHeaders({
+                'Content-type': 'application/json'
+            })
+        })
     }
 }
