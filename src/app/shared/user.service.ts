@@ -2,11 +2,17 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { User } from 'src/models/User';
 import { Observable } from 'rxjs';
+import { v4 as uuid } from 'uuid';
 
 @Injectable()
 export class UserService {
 
-    BASE_URL = "http://192.168.122.21:3000/user"
+    BASE_URL = "http://192.168.122.21:3000/user/"
+
+    currentUser: User = {
+        id: '',
+        userName: ''
+    };
 
     constructor(
         private http: HttpClient
@@ -20,11 +26,13 @@ export class UserService {
         return this.http.get<User[]>(this.BASE_URL);
     }
 
-    createUser(user: User) {
-        return this.http.post(this.BASE_URL, user, {
+    createUser() {
+        this.currentUser.id = uuid();
+
+        return this.http.post(this.BASE_URL, JSON.stringify(this.currentUser), {
             headers: new HttpHeaders({
-                'Content-Type': 'application/json'
+                'Content-type': 'application/json'
             })
-        })
+        }).toPromise();
     }
 }
