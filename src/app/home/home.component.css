@@ -2,10 +2,21 @@
     height: calc(100% - 60px);
 }
 
-.split{
+.container, .row ,.full {
+    height: 100%;
+}
+
+
+.split:first-child{
     height: 50%;
 }
 
+.split:not(:first-child){
+    margin-top: 10px;
+    height: calc(50% - 10px);
+}
+
 .box {
-    background-color: greenyellow;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid black;
 }
