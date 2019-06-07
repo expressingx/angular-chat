@@ -6,12 +6,12 @@
           <app-users></app-users>
         </div>
         <div class="split box">
-          <app-chat-group></app-chat-group>
+          <app-chat-group (groupSelected)="groupSelected($event)"></app-chat-group>
         </div>
       </div>
       <div class="col-sm">
         <div class="full box">
-          <app-messages></app-messages>
+          <app-messages [chatGroup]="currentChatGroup"></app-messages>
         </div>
       </div>
     </div>

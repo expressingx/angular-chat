@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ChatGroup } from 'src/models/ChatGroup';
 import { GroupService } from '../shared/group.service';
 
@@ -11,6 +11,8 @@ export class ChatGroupComponent implements OnInit {
 
   public chatGroups: ChatGroup[];
   public currentGroup: ChatGroup;
+  @Output() groupSelected = new EventEmitter<ChatGroup>(); 
+
 
   constructor(private groupService: GroupService) { }
 
@@ -31,6 +33,7 @@ export class ChatGroupComponent implements OnInit {
 
   selectGroup(group: ChatGroup) {
     this.currentGroup = group;
+    this.groupSelected.emit(group);
   }
 
   chatGroupSaved(group: ChatGroup) {
