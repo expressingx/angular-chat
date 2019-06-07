@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CharGroupComponent } from './char-group.component';
+import { CharGroupComponent } from './chat-group.component';
 
 describe('CharGroupComponent', () => {
   let component: CharGroupComponent;

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
-import { CharGroupComponent } from './char-group/char-group.component';
+import { CharGroupComponent } from './chat-group/chat-group.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageItemComponent } from './Messages/message-item/message-item.component';
 import { MessageListComponent } from './Messages/message-list/message-list.component';
