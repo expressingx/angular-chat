@@ -1,3 +1,12 @@
-<p>
-  users works!
-</p>
+<div class="container">
+  <div class="row">
+    <app-users-list class="col-md-6" [users]="users"
+                    (selected)="selectUser($event)"
+                    >
+    </app-users-list>
+
+    <app-user-details class="col-md-6" [user]="currentUser"
+                    (saved)="saveItem($event)"                   >
+    </app-user-details>
+  </div>
+</div>
