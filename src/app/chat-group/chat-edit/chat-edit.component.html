@@ -1,0 +1,10 @@
+<label *ngIf="chatGroup.id; else create">
+  Edit chat group
+</label>
+<ng-template #create>
+  Create a new chat group
+</ng-template>
+
+<input type="text" class="form-control" placeholder="Chat group name" [(ngModel)]="chatGroup.name">
+
+<button (click)="save()">Save</button>
